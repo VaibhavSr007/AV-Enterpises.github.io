@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{%block title%} Defence Dreamers {% endblock title%}
+{%block body%} 
+<link rel="stylesheet" href="/static/css/process.css?{% now "U" %}"/>
+
+<div class="container">
+    <div class="content m-3 px-5 py-4" style="border-radius: 12px;">
+        <h2 class="text-center">Vikas Dwiwedi (NDA-145)</h2>
+        <div class="d-flex justify-content-center"><img class="rounded mt-4 text-center w-50" src="/static/css/vikas.jpg" alt=""></div>
+        <p class="mt-4">Vikas Yadav, one of the most unorthodox candidate who challenged every preconcieved notion which were carried to SSB by candidates. He was the one candidate who's psychology was specfically appreciated by the Pyschologist at the SSB. From the early days Vikas saw his father adorning olives which made him to set his goal to armed forces. Vikas was never a over achiever but always a out of box thinker. Preferablly this derived him to be poet by hobby and take his oratory skills to next level. 
+            <br><br>
+            Vikas started his preparation by end of class 12th and was giving his best but it was not suffice to crack the examination. Preparation of SSB always intrigued him but it wasnt possible without clearing the exam. He was continously trying to crack exam by but his weak mathematics was becoming an obstacle. Now he finally strategised to play on his strengths and tackle maths in diiferent manner. He sorted out the easiest and most marks obtaining portions of mathematics and religiously studeies/practised only those. <br>
+            He knew well he only need to clear the sectional cut-off for maths and he can boost overall score with the help of GAT. GAT was his strong part so he sharpened that in such a way that he gain maximum marks from that. By utilising all these plans he prepared consistently for the period of 6 months. <br>
+            Finally the day of judgement arrived and he was able to get his name to the list of those aspirants. All restless nights, plans, strategies and others paid him off.
+            <br><br>
+            Now it was SSB preparation time about which Vikas was excited from very starting. He started his preparation in his own style and never followed the orthodox styles used by most of the other candidates. Vikas used the essence of originality in his psychology, in TAT he only wrote the actions which he did in his real life, in SRT wrote the actions which were literally possible and not heroic and for WAT worte sentences which were related to his own life. <br><br>
+            For preparation of GTO and Personal interview he took help of his friends who were previously reccomended or had experiance of SSB. He worked in the group with his friends did a collabrative learning and assessed each others performance based on their prior experiance. Vikas gained much knowledge and practised well in the group, this gave him a base for his strategy. Once got in flow with the process he started to improvise the orthodox practices to his own advantage. One incident of SSB proved his wit when interviewer asked him a question which he asked many other candidates too, vikas knew the answer as he heard from other candidates but he intentionally mispelled it just to show his honesty. Interviewer asked and Vikas's reply: "this question was disscused in the candidates line alot so i overheard its answer". This proved he was honest as he made this look like he was telling truth and did not know the answer but it was his complete plan. <br><br>
+            Many such witty actions were done by Vikas to overtake other candidates and this made him to get into the list of those reccomended candidates. He made many other candidates to at the process from different angle which worked for many of them. He cleared the SSB in first attempt and made his father (serving JCO) and whole family swell with proud.
+
+        </p>
+    </div>
+</div>
+
+
+<div class="foot">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" style="color: black; padding: 25px;" aria-current="page" href="/index"><strong>Home</strong></a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" style="color: black; padding: 25px;" href="/about"><strong>About</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: black; padding: 25px;" href="/explore"><strong>Explore</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: black; padding: 25px;" href="/exams"><strong>Exams Preparation</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: black; padding: 25px;" href="/ssb"><strong>SSB Preperation</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: black; padding: 25px;" href="/process"><strong>Defence Knowledge</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: black; padding: 25px;" href="/contact"><strong>Contact</strong></a>
+    </li>
+  </ul>
+    <div class="container">
+        <div class="row">
+          <div class="col foot-social my-5 d-flex justify-content-center align-items-center">
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.facebook.com/DefenceMinIndia/"><img src="/static/css/facebook.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.linkedin.com/company/defence-club-vitb/"><img src="/static/css/linkedin.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.instagram.com/defence_warriors_squad_/"><img src="/static/css/instagram.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://twitter.com/adgpi"><img src="/static/css/twitter.png" width="30px" alt=""> </a>
+          </div>
+          <div class="col logo my-5">
+            <a href="/index"><img src="/static/logo.png" width="200" class="d-block mx-auto"></a>
+          </div>
+          <div class="col my-5 d-flex justify-content-center align-items-center">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <p><strong>Sign-up for Updates</strong></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <form action={% url 'saveupdates'%} method="post" class="col">
+                    {%csrf_token%}
+                    <input type="email" class="form-control mb-3" id="user_email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                    <button type="submit" class="btn btn-dark btn-sm mb-1">Submit</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+<div class="container mx-0" style="background: transparent; height: 15px;">
+    <p class="my-2" >Copyright © Vaibhav Srivastava 2023.</p>
+</div>
+{% endblock body %}

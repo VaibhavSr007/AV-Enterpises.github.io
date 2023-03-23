@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+
+{%block title%} Defence Dreamers {% endblock title%}
+{%block body%}
+{% comment %} <link rel="stylesheet" href="static/css/index.css"> down one is usw {% endcomment %}
+<link rel="stylesheet" href="/static/css/index.css?{% now "U" %}"/>
+
+
+<header class="parallax-header">
+    <div class="container">
+        <div class="header-content">
+            <a href="#" class="logo-start d-flex justify-content-center" >
+                <img src="/static/logo.png" width="200" class="d-block mx-auto">
+            </a>
+            <h3 class="text-center text-light my-3 logo-start" style="text-decoration: none"> Let's Get Those Stars </h3>
+            <div class="container1 d-flex justify-content-center">
+                <p class="typed text-center">A website made with love, by a defence aspirant for the defence aspirants!!</p>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<div class="container text-center my-5">
+
+    {% comment %} here we start logo of all 3 forces {% endcomment %}
+    <div class="content row logos shadow-lg  rounded pb-4">
+        <div class="col logo-hover mt-4">
+            <a  href="https://indianairforce.nic.in/"><img src="/static/css/air-logo.png" width="230px" alt=""></a>
+            <h4 class="mt-2">Air Force</h4>
+        </div>
+        <div class="col logo-hover mt-2">
+           <a  href="https://indianarmy.nic.in/"><img class="my-4" src="/static/css/army-logo.png" width="300px" alt=""></a>
+           <h4 >Army</h4>
+        </div>
+        <div class="col logo-hover mt-4">
+            <a  href="https://www.joinindiannavy.gov.in/"><img src="/static/css/navy-logo.png" width="200px" alt=""></a>
+            <h4>Navy</h4>
+        </div>
+    </div>
+    {% comment %} here we end the part of all 3 forces logos {% endcomment %}
+
+    <!-- here start the part of utube video and abt -->
+    <div class="content row my-5 shadow-lg rounded">
+        <div class="col-md-6 left">
+            <h1 class="primary-color">This is about</h1>
+            <p class="text-justify px-3"> Defence Dreamer! a website for dreamers who strives to adorn that prestogious uniform. Getting into indian armed forces has never been easy for anyone, from clearing written exams till recieving of joining letter each phase is hills and valleys. But to make this very same process a gentle walk for you Defence Dreamer comes to act with several features. Starting with well curated written examination strategies to proper plan for clearing Services Selection Board (SSB) interview everything is offered at same portal. </br>
+              The strategies, plans and study materials refered on portal are all curated by the aspirants who have been successful several times in the same selection procedure. Many of the candidates who have been once a Defence Dreamer and now an Officer in the armed forces have also contributed to development of this portal. </p>
+            <button type="button" class="btn btn-dark mb-3"><a style="color: azure; text-decoration: none;" href="/about">Read More</a></button>
+        </div>
+
+        <div class="col-md-6 right">
+                <iframe class="w-100" height="100%" src="https://www.youtube.com/embed/3t5M10gBVCc?autoplay=1&control=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div> 
+    <!-- here end the part of utube video and abt -->
+
+    <!-- here start the part of featires -->
+    <div class="content row shadow-lg  rounded">
+        <h1 class="my-3">Features</h1>
+        <div class="col mt-3 feature-hover features">
+            <a style="text-decoration:none; color: black;" href="/exams"><img src="static/css/doc.png" width="100px" alt=""> <!-- here we will add exam prep page  -->
+            <h4>Proficient Preparation Guide</h4></a>
+            <p>From written examinations materials to SSB cracking guide and strategy, everything is served in detailed and structured manner. Best reccomended courses for CDS, NDA, AFCAT and INET are listed for the ease of candidates</p>
+        </div>
+        <div class="col my-3 feature-hover features">
+            <a style="text-decoration:none; color: black;" href="/explore"><img padding-top: "10px;" src="static/css/inspi1.png" width="100px" alt="">
+            <h4>Inspirational Tales</h4></a>
+            <p>Success stories of our defence dreamer, who also once had a dream to wear the uniform and are now living their dream. Strategies, plans and materials used by them are also described. So if you ever feel low have read and rejuvenate yourself.</p>
+        </div>
+        <div class="col my-3 feature-hover features">
+             <a style="text-decoration:none; color: black;" href="/process"><img  src="static/css/def.png" width="100px" alt="">  <!-- here we will add About process  -->
+            <h4>Exclusive Defence Knowledge</h4></a>
+            <p>Noteworthy defence knowledge, which is very common point of disscusion in personal interview during SSB interview. This gives one a chance to get insightful information of our Indian Armed Forces.</p>
+        </div>
+    </div>
+    <!-- here ends the features part -->
+
+    <!-- here starts the chat feature -->
+    <div class="content mt-5 px-5 chat-feature row shadow-lg d-flex justify-content-center rounded">
+        <h1 class="my-3">Defence Dreamers Chat</h1>
+        <p>A public chat community for all the defence aspirants where they can discuss their doubts with fellow aspirants. It is one of the way we can support to create a heathy community of defence aspiransts and learn from each other. Dreamers chat is a way to <b>learn togather grow togather and bear stars togather</b></p>
+        <button type="button" class="btn btn-dark" style="width: 100px; margin-bottom: 20px;"><a style="color: azure; text-decoration: none;" href="http://localhost:3000">Chat Now</a></button>
+        <!-- <button type="button" class="btn btn-dark">Dark</button> -->
+    </div>
+    <!-- here ends the chat feature -->
+
+    <!-- here start the part for inspiring Tales -->
+
+    <div id="carouselExampleControls" class="content carousel slide testimonial my-5 shadow-lg  rounded" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+    
+          <div class="carousel-item active" >
+            <h2>Vaibhav Srivastava NDA-145 | TES-42</h2>
+              <img src="/static/css/tes1.jpg"  class="center-block my-3" width="205" alt="...">
+              <p class="my-3">SSB is all about revealing your best selves to the assessers and if your best selves hold those officers like qualities, no one can stop you. </p>
+              <button type="button" class="btn btn-dark"><a style="color: azure; text-decoration: none;" href="/explore">Read More</a></button>
+          </div>
+    
+          <div class="carousel-item" >
+            <h2>Vikas Yadav NDA-145 </h2>
+              <img src="/static/css/vik1.jpg"  class="center-block my-3" width="233" alt="...">
+            <p class="my-3">Vikas used the essence of originality in his psychology, in TAT he only wrote the actions which he did in his real life, in SRT wrote the actions which were literally possible and not heroic and for WAT worte sentences which were related to his own life.</p>
+            <button type="button" class="btn btn-dark"><a style="color: azure; text-decoration: none;" href="/explore">Read More</a></button>
+          </div>
+
+          <div class="carousel-item" >
+            <h2>Akash Yadav NDA-144 </h2>
+              <img src="/static/css/tes3.jpg"  class="center-block my-3" width="193" alt="...">
+            <p class="my-3">Multiple defence exam attempts dissatisfaction with one major and foremost successful attempt in NDA was truly Akash’s expansive mental and physical strength in his approach</p>
+             <button type="button" class="btn btn-dark"><a style="color: azure; text-decoration: none;" href="/explore">Read More</a></button>
+          </div>
+    
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden=""></span>
+          <span class="visually-hidden">Prev</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden=""></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- here ends the part for inspiring Tales -->
+ 
+</div>
+
+<div class="foot">
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" style="color: black; padding: 25px;" aria-current="page" href="/index"><strong>Home</strong></a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: black; padding: 25px;" href="/about"><strong>About</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/explore"><strong>Explore</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/exams"><strong>Exams Preparation</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/ssb"><strong>SSB Preperation</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/process"><strong>Defence Knowledge</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/contact"><strong>Contact</strong></a>
+        </li>
+      </ul>
+        <div class="row">
+          <div class="col foot-social my-5 d-flex justify-content-center align-items-center">
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.facebook.com/DefenceMinIndia/"><img src="/static/css/facebook.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.linkedin.com/company/defence-club-vitb/"><img src="/static/css/linkedin.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.instagram.com/defence_warriors_squad_/"><img src="/static/css/instagram.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://twitter.com/adgpi"><img src="/static/css/twitter.png" width="30px" alt=""> </a>
+          </div>
+          <div class="col logo my-5">
+            <a href="/index"><img src="/static/logo.png" width="200" class="d-block mx-auto"></a> 
+          </div>
+          <div class="col my-5 d-flex justify-content-center align-items-center">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <p><strong>Sign-up for Updates</strong></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <form action={% url 'saveupdates'%} method="post" class="col">
+                    {%csrf_token%}
+                    <input type="email" class="form-control mb-3" id="user_email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                    <button type="submit" class="btn btn-dark btn-sm mb-1">Submit</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+
+    </div>
+</div>
+<div class="container mx-0" style="background: transparent; height: 15px;">
+    <p class="my-2" >Copyright © Vaibhav Srivastava 2023.</p>
+</div>
+
+
+<!-- <script>
+    const navEl = document.querySelector('.navbar');
+    window.addEventListener('scroll',()=> {
+        if(window.scrollY>=200){
+            navEl.classList.add('navbar-scrolled');
+        }else if(window.scrollY<200){
+            navEl.classList.remove('navbar-scrolled');
+        }
+    });
+    vaibhav
+    V@ibhav007
+</script> -->
+
+
+{% endblock body %}
+

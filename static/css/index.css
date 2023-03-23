@@ -1,0 +1,112 @@
+ 
+body{
+    /* background: linear-gradient(#A4BE7B, #E6E5A3, #B6E2A1); */
+    background: linear-gradient(rgb(172,142,103),rgb(149,132,91));
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center center;
+}  
+.navbar{
+    /* background: linear-gradient(rgb(172,142,103),rgb(149,132,91)); */
+    background: radial-gradient(rgb(248, 224, 190),rgb(248, 213, 160));
+
+    /* background-color: #5F8D4E; */
+    /* transition: all 0.5s; */
+}
+.nav.navbar-nav.navbar-right li a {
+    color: rgb(135,135,135);
+}
+/* .navbar-scrolled{
+    background-image: linear-gradient(rgb(255, 171, 26),white,rgb(65, 249, 65));
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+} */
+/* new herer */
+.parallax-header{
+    background: #000;
+    background: linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.8)
+        ),
+        url(./army-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container1{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 20px;
+  }
+.typed {
+    color: azure;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 2.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+} 
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+.header-content{
+    padding: 230px 120px 230px 120px;
+    text-decoration: none;
+}
+.logo-start{
+    top: 60px;
+}
+.logos{
+    padding: 12px;
+}
+.logo-hover:hover{
+    transform: scale(1.08); 
+}
+.content{
+    margin-top: 0px;
+    background: radial-gradient(rgb(242, 234, 223),rgb(248, 213, 160)) ;
+    box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
+}
+.content .left{
+    padding-top: 20px;
+}
+.content .right{
+    padding: 0;
+}
+.text-justify{
+     text-align: justify;
+}
+/* new added here */
+
+.features{
+    padding: 2% 4% ;
+}
+.feature-hover:hover{
+    transform: scale(1.1); 
+}
+.carousel-control-next,.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.testimonial{
+    padding: 3% 15%;
+    /* background-color: #ef8172; */
+    text-align: center;
+    /* color: white; */
+}
+
+
+.foot{
+    margin: 0;
+    padding: 0;
+    background: rgb(248, 213, 160);
+    width: 100%;
+    height: auto;
+}
+

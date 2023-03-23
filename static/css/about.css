@@ -1,0 +1,36 @@
+body{
+    /* background: linear-gradient(rgb(186, 121, 9),rgb(255, 252, 252)); */
+
+    background: linear-gradient(rgb(172,142,103),rgb(149,132,91));
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center center;
+}  
+.navbar{
+    /* background-image: linear-gradient(rgb(255, 171, 26),white,rgb(65, 249, 65)); */
+    background: radial-gradient(rgb(248, 224, 190),rgb(248, 213, 160));
+    background-image: transparent;
+
+}
+
+.header-image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    margin-top: 0px;
+    background: radial-gradient(rgb(242, 234, 223),rgb(248, 213, 160)) ;
+    box-shadow: 0 0 20px -6px rgba(0,0,0,0.2);
+}
+
+
+.foot{
+    margin: 0;
+    padding: 0;
+    background: rgb(248, 213, 160);;
+    width: 100%;
+    height: auto;
+}

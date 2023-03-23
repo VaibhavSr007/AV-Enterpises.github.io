@@ -1,0 +1,52 @@
+body{
+    /* background: linear-gradient(rgb(186, 121, 9),rgb(255, 252, 252)); */
+
+    background: linear-gradient(rgb(172,142,103),rgb(149,132,91));
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center center;
+}  
+.navbar{
+    /* background-image: linear-gradient(rgb(255, 171, 26),white,rgb(65, 249, 65)); */
+    background: radial-gradient(rgb(248, 224, 190),rgb(248, 213, 160));
+    background-image: transparent;
+
+}
+
+.parallax-header{
+    background: #000;
+    background: linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.8)
+        ),
+        url(./tri-3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:darken;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-content{
+    padding: 130px 0px 130px 0px;
+    /* text-align: center; */
+    text-decoration: none;
+}
+
+.head-img{
+    
+}
+.card{
+    background: radial-gradient(rgb(242, 234, 223),rgb(248, 213, 160)) ;
+}
+
+.foot{
+    margin: 0;
+    padding: 0;
+    background: rgb(248, 213, 160);
+    width: 100%;
+    height: auto;
+}

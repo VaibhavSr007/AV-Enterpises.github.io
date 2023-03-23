@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{%block title%} Defence Dreamers {% endblock title%}
+
+{%block body%} 
+{% comment %} <link rel="stylesheet" href="static/css/explore.css"> {% endcomment %}
+<link rel="stylesheet" href="/static/css/explore.css?{% now "U" %}"/>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="/static/ima-bit1.png " style="opacity: 0.9; filter: brightness(60%);" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/static/nav-3.jpg" style="opacity: 0.9; filter: brightness(60%);" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/static/iaf-6.jpg" style="opacity: 0.9; filter: brightness(60%);" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div> 
+<div class="mt-5 container w-50" style="background-color:rgb(248, 213, 160); border-radius: 12px;"><h1 class="text-center py-5">Inspirational Success Stories</h1></div>
+<div class="container">
+  <div class="card-group my-5">
+    <div class="card mx-5 content  shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+        <img src="/static/css/akash.jpg" class="card-img-top" height="450px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Akash Yadav</h5>
+          <p class="card-text">Reccomended from 19 SSB Allahabad in NDA-144 for Indian Army, secured AIR-90.</p>
+          <a href="/akash" class="btn btn-dark btn-primary">Read More</a>
+        </div>
+    </div>
+    <div class="card mx-5 content shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+        <img src="/static/css/vai.jpg" class="card-img-top" height="450px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vaibhav Srivastava</h5>
+          <p class="card-text">Reccomended from 19 SSB Allahabad in TES-42 and NDA-145 for Indian Army.</p>
+          <a href="/vaibhav" class="btn btn-dark btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+    <div class="card-group my-5">
+        <div class="card mx-5 content  shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/css/ssc.jpg"  height="400px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sartaj Singh Cheema</h5>
+              <p class="card-text">Reccomended from 19 SSB Allahabad in (Technical Entry Scheme)TES-42 for Indian Army.</p>
+              <a href="/sartaj" class="btn btn-dark btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="card mx-5 content shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/css/ssbcr.jpg"  height="400px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Leroy D'Cunha</h5>
+              <p class="card-text">Reccomended from 33 SSB Bhopal in NDA-149 for Indian Navy as a Pilot.</p>
+              <a href="/leroy" class="btn btn-dark btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-group my-5">
+        <div class="card mx-5 content shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/css/shashwat.jpg" height="450px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shashwat Dwivedi</h5>
+              <p class="card-text">Reccomended from 18 SSB Allahabad in NDA-144 and 19 SSB Allahabad in NDA-146 for Indian Army.</p>
+              <a href="/shas" class="btn btn-dark btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="card mx-5 content shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/css/vikas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vikas Yadav</h5>
+              <p class="card-text">Reccomended from 19 SSB Allahabad in NDA-145 for Indian Army, Secured AIR-105.</p>
+              <a href="/vikas" class="btn btn-dark btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" style="color: black; padding: 25px;" aria-current="page" href="/index"><strong>Home</strong></a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: black; padding: 25px;" href="/about"><strong>About</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/explore"><strong>Explore</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/exams"><strong>Exams Preparation</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/ssb"><strong>SSB Preperation</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/process"><strong>Defence Knowledge</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; padding: 25px;" href="/contact"><strong>Contact</strong></a>
+        </li>
+      </ul>
+        <div class="row">
+          <div class="col foot-social my-5 d-flex justify-content-center align-items-center">
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.facebook.com/DefenceMinIndia/"><img src="/static/css/facebook.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.linkedin.com/company/defence-club-vitb/"><img src="/static/css/linkedin.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://www.instagram.com/defence_warriors_squad_/"><img src="/static/css/instagram.png" width="30px" alt=""> </a>
+            <a style="padding: 12px; text-decoration: none; color: black;" href="https://twitter.com/adgpi"><img src="/static/css/twitter.png" width="30px" alt=""> </a>
+          </div>
+          <div class="col logo my-5">
+            <a href="/index"><img src="/static/logo.png" width="200" class="d-block mx-auto"></a>
+          </div>
+          <div class="col my-5 d-flex justify-content-center align-items-center">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <p><strong>Sign-up for Updates</strong></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <form action={% url 'saveupdates'%} method="post" class="col">
+                    {%csrf_token%}
+                    <input type="email" class="form-control mb-3" id="user_email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                    <button type="submit" class="btn btn-dark btn-sm mb-1">Submit</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+
+    </div>
+</div>
+<div class="container mx-0" style="background: transparent; height: 15px;">
+    <p class="my-2" >Copyright © Vaibhav Srivastava 2023.</p>
+</div>
+
+<script>
+    {% comment %} const navEl = document.querySelector('.navbar');
+    window.addEventListener('scroll',()=> {
+        if(window.scrollY>=200){
+            navEl.classList.add('navbar-scrolled');
+        }else if(window.scrollY<200){
+            navEl.classList.remove('navbar-scrolled');
+        }
+    }); {% endcomment %}
+</script>
+{% endblock body %}

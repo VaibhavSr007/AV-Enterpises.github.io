@@ -1,0 +1,1 @@
+This is kept to check if the static folder of site functions well??

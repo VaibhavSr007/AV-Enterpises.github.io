@@ -1,0 +1,33 @@
+body{
+    background-image: url(/static/css/tri1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.navbar{
+    /* background: linear-gradient(rgb(221, 190, 150),rgb(248, 213, 160)); */
+    background: radial-gradient(rgb(248, 224, 190),rgb(248, 213, 160));
+
+    /* background-color: #5F8D4E; */
+    /* transition: all 0.5s; */
+}
+.form-heading{
+    padding: 12px 0 25px 0;
+    text-align: center;
+}
+.form-box{
+    width: 50%;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(248, 213, 160);
+}
+
+.foot{
+    margin: 0;
+    padding: 0;
+    background: rgb(248, 213, 160);
+    width: 100%;
+    height: auto;
+}
