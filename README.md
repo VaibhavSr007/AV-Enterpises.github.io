@@ -70,7 +70,7 @@ Open your web browser and navigate to http://localhost:8000 to access the websit
 
 Demo Video Link
 
-https://github.com/VaibhavSr007/static/1.png?raw=true
+https://youtu.be/xknSwJBy4c8
 
 
 ## Deployment
