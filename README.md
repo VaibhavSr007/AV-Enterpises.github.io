@@ -40,6 +40,7 @@ Create a superuser account to access the Django admin interface. Execute the fol
 ```
 
 Start the Django development server with the following command:
+
 ```bash
   python manage.py runserver
 ```
@@ -59,11 +60,10 @@ Open your web browser and navigate to http://localhost:8000 to access the websit
 
 ## Screenshots
 
-![App Screenshot](https://github.com/VaibhavSr007/static/1.png?raw=true)
-![App Screenshot](https://github.com/VaibhavSr007/static/2.png?raw=true)
-![App Screenshot](https://github.com/VaibhavSr007/static/4.png?raw=true)
-![App Screenshot](https://github.com/VaibhavSr007/static/5.png?raw=true)
-![App Screenshot](https://github.com/VaibhavSr007/static/7.png?raw=true)
+![1](https://github.com/VaibhavSr007/Defence-Dreamers.github.io/assets/99118025/6292bdbb-76ba-40f8-bf63-21c676a75811)
+![2](https://github.com/VaibhavSr007/Defence-Dreamers.github.io/assets/99118025/b27edee3-e66d-4b40-95ba-884be5d7dd81)
+![4](https://github.com/VaibhavSr007/Defence-Dreamers.github.io/assets/99118025/d891840b-3690-4508-9281-f48ebcf7b11c)
+![7](https://github.com/VaibhavSr007/Defence-Dreamers.github.io/assets/99118025/92b4842e-2b98-442a-8d4f-43e90c5c1c7e)
 
 
 ## Demo
